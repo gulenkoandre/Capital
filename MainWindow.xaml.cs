@@ -23,8 +23,7 @@ namespace Capital
             InitializeComponent();
 
             Init();
-
-            //_button.Click += Button_Click;
+                        
         }
 
         #region=============================================================Fields==================================================
@@ -41,15 +40,21 @@ namespace Capital
 
         };
 
-        List<string?> _colorString = new List<string?>() //набор цветов для StrategyType
+        /// <summary>
+        /// набор цветов для StrategyType
+        /// </summary>
+        List<string?> _colorString = new List<string?>() //
         {
             "Black",
             "Blue",
             "Green",
             "Red"
         };
-       
-        List<Data> datas = new List<Data>(); //данные - точки для построения графика
+
+        /// <summary>
+        /// данные - точки для построения графика
+        /// </summary>
+        List<Data> datas = new List<Data>(); 
 
         Random _random = new Random();
 
